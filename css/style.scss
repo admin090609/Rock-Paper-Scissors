@@ -8,6 +8,7 @@
 
 body {
     background-image: url("/img/back.png");
+    user-select: none;
 }
 
 .block {
@@ -20,6 +21,9 @@ body {
     transform: translateY(27.5%);
     background-size: cover;
     border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 
     > .title {
         padding: 25px 0;
@@ -31,7 +35,8 @@ body {
     > .btns {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
+        margin-bottom: 50px;
         > .rock {
             background: none;
             border: none;

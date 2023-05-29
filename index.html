@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/images.js"></script>
+    
 </head>
 <body>
     <div class="block">
-        <div class="title">Rock, Paper, Scissors-Game <br>Let's Play</div>
+        <div class="title">Rock, Paper, Scissors-Game <br>Let's Play!</div>
 
         <div class="game">
             <div class="left">
                 <div class="ltext">PC</div>
-                <div class="lph"><img src="img/paper_left.png"></div>
+                <div class="lph"><img id="img_left" src="img/paper_left.png" draggable="false"></div>
             </div>
             <div class="right">
                 <div class="rtext">YOU</div>
-                <div class="rph"><img src="img/paper_right.png"></div>
+                <div class="rph"><img id="img_right" src="img/paper_right.png" draggable="false"></div>
             </div>
         </div>
+
+        <div class="ldtext">Choose an option!</div>
         
         <div class="ldtext">
             Wait...
         </div>
 
         <div class="btns">
-            <button class="rock"><img src="./img/rock.png"></button>
-            <button class="paper"><img src="./img/paper.png"></button>
-            <button class="scissors"><img src="./img/scissors.png"></button>
+            <button class="rock" id="rock" onclick="rockFc()"><img src="./img/rock.png" draggable="false"></button>
+            <button class="paper" id="paper" onclick="paperFc()"><img src="./img/paper.png" draggable="false"></button>
+            <button class="scissors" id="scissors" onclick="scissorsFc()"><img src="./img/scissors.png" draggable="false"></button>
         </div>
     </div>
+    <script src="/js/images.js"></script>
 </body>
 </html>
